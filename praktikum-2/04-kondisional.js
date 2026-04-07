@@ -50,20 +50,18 @@ switch (namaHari) {
 
 
         // latihan 2: konversi musim dan status cuaca
-        let bulan = 7; // Juli
-        console.log('\n=== Konversi Bulan ke Musim ===');
-        console.log(`Bulan: ${bulan}`);
+        let bulan = 1; // 1-12 bulan dalam setahun
         let musim;
 
-        if (bulan >= 12 && bulan <= 3) {
-            musim = 'Musim Dingin';
-        } else if (bulan >= 6 && bulan <= 8) {
-            musim = 'Musim Panas';
-        }else if (bulan >=9 && bulan <= 11)  {
+        if (bulan >= 9 && bulan <= 11) {
+            musim = 'Musim panas';
+        } else if (bulan >= 12 && bulan <= 2) {
             musim = 'Musim Gugur';
-        } else if (bulan >= 4 && bulan <= 5) {
-            musim = 'Musim Semi';
-        } else {
+        }else if (bulan >= 3 && bulan <= 5)  {
+            musim = 'Musim hujan';
+        } else if (bulan >= 6 && bulan <= 8) {
+            musim = 'Musim gugur';
+        } else { 
             musim = 'Bulan tidak valid';
         }
         console.log('\n=== Konversi Bulan ke Musim ===');
