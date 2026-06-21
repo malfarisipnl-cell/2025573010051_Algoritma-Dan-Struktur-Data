@@ -28,3 +28,4 @@ console.log("Counting Sort O(n) :", Date.now() - t, "ms");
 t = Date.now();
 [...data].sort((a, b) => a - b);
 console.log("Array.sort (Timsort) :", Date.now() - t, "ms");
+ 
